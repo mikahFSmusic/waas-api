@@ -1,4 +1,4 @@
-import express, { Request, Response } from 'express';
+import { Request, Response } from 'express';
 import { initializeApp } from 'firebase/app';
 import { getStorage, ref, uploadBytes } from 'firebase/storage';
 
@@ -28,7 +28,7 @@ export const uploadAudioFile = async (req: Request, res: Response) => {
 
     console.log(uploadResult);
 
-    res.send('File uploaded successfully');
+    res.send({ data: uploadResult });
   } catch (err) {
     console.log(err);
     res.status(500).send(err);
