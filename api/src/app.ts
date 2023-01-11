@@ -8,7 +8,7 @@ import cors from 'cors';
 import helmet from 'helmet';
 import { initializeApp } from 'firebase/app';
 import { getStorage, ref } from 'firebase/storage';
-import UploadRoutes from './routes/upload.route';
+import UploadRoutes from './routes/uploadAudioFile.route';
 
 dotenv.config();
 
