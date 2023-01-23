@@ -2,10 +2,9 @@ import express from 'express';
 import multer from 'multer';
 import { uploadAudioFile } from '../controllers/uploadAudioFile.controller';
 
+const UPLOAD_ROUTE = '/upload';
 const router = express.Router();
 const upload = multer({ storage: multer.memoryStorage() });
-
-const UPLOAD_ROUTE = '/upload';
 
 router.post(UPLOAD_ROUTE, upload.single('file'), uploadAudioFile);
 
