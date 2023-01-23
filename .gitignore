@@ -2,3 +2,5 @@
 transcripts/
 venv/
 api/node_modules/
+
+*.mp3
