@@ -2,10 +2,11 @@
   "name": "api",
   "version": "1.0.0",
   "description": "waas api",
-  "main": "app.ts",
+  "main": "dist/app.js",
   "scripts": {
     "test": "yarn test",
-    "start": "node app.ts",
+    "start": "node dist/app.js",
+    "build": "tsc",
     "dev": "ts-node-dev --respawn --pretty --transpile-only src/app.ts"
   },
   "author": "Mikah Feldman-Stein",
